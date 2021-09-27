@@ -1,3 +1,32 @@
+
+body {
+  margin: 0px;
+  background-color: #FFFEF6;
+  height: 100vh;
+}
+
+ul {
+  padding: 0px;
+}
+
 .hidden {
   display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  height: 90%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.to-do {
+  display: flex;
+  list-style-type: none;
+  max-width: 600px;
+  width: 90vw;
 }
