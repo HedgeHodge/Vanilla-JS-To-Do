@@ -9,6 +9,7 @@ function makeToDoElement(text) {
   // Create li element
   var li = document.createElement("li");
   li.textContent = text;
+  li.id = text;
   li.setAttribute("class", "to-do")
 
   // Create delete button element
@@ -21,8 +22,11 @@ function makeToDoElement(text) {
 
 function renderItems() {
   toDoList.forEach(item => {
-    // TODO: Render each todo but not if it already exists (Some kind of key maybe?)
-    makeToDoElement(item);
+    if(document.getElementById(item)) {
+      return;
+    } else {
+      makeToDoElement(item);
+    }
   });
 };
 
