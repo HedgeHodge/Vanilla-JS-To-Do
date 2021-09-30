@@ -1,5 +1,16 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
 body {
+  font-family: 'Nunito', sans-serif;
   margin: 0px;
   background-color: #FFFEF6;
   height: 100vh;
@@ -26,7 +37,31 @@ ul {
 
 .to-do {
   display: flex;
+  justify-content: space-between;
   list-style-type: none;
   max-width: 600px;
   width: 90vw;
+  padding: 1rem 0;
+  background-color: #EAF4DA;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #424B54;
+}
+
+.to-do:nth-child(2n) {
+  background-color: #FDE0CD;
+}
+
+.to-do:nth-child(3n) {
+  background-color: #FACCD1;
+}
+
+#plus-button {
+  background-color: #424B54;
+  border-radius: 50%;
+  color: #FFFEF6;
+  border: none;
+  font-size: 3rem;
+  padding: 0 .85rem;
 }

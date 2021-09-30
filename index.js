@@ -3,19 +3,23 @@ var inputField = document.getElementById("input-field");
 var toDos = document.getElementById("to-dos");
 var tutorialText = document.getElementById("tutorial-text");
 
-var toDoList = ["Water", "Fire", "Air", "Earth"];
+var toDoList = ["Water", "Fire", "Air"];
 
 function makeToDoElement(text) {
   // Create li element
   var li = document.createElement("li");
-  li.textContent = text;
-  li.id = text;
   li.setAttribute("class", "to-do")
+
+  // Create p element
+  var p = document.createElement("p");
+  p.textContent = text;
+  p.id = text;
 
   // Create delete button element
   var button = document.createElement("button");
   button.textContent = "x";
 
+  li.appendChild(p);
   li.appendChild(button);
   toDos.appendChild(li);
 }
