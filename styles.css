@@ -45,8 +45,6 @@ ul {
   background-color: #EAF4DA;
   border-radius: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.1rem;
-  color: #424B54;
 }
 
 .to-do:nth-child(2n) {
@@ -57,11 +55,19 @@ ul {
   background-color: #FACCD1;
 }
 
-#plus-button {
-  background-color: #424B54;
-  border-radius: 50%;
-  color: #FFFEF6;
+.to-do p,button{
+  margin: 1.5rem;
+  background-color: transparent;
   border: none;
-  font-size: 3rem;
-  padding: 0 .85rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1rem;
+  color: #516880;
+}
+
+.tutorial-container {
+  max-width: 350px;
+  text-align: center;
+  font-size: 2rem;
+  color: #516880;
+  font-weight: 800;
 }

@@ -3,7 +3,7 @@ var inputField = document.getElementById("input-field");
 var toDos = document.getElementById("to-dos");
 var tutorialText = document.getElementById("tutorial-text");
 
-var toDoList = ["Water", "Fire", "Air"];
+var toDoList = [];
 
 function makeToDoElement(text) {
   // Create li element
