@@ -44,7 +44,7 @@ function changeInput() {
     plusButton.classList.add("hidden");
     inputField.classList.remove("hidden");
     inputField.focus();
-    if(!tutorialText.classList.contains("hidden")) {
+    if(toDoList.length > 0) {
       tutorialText.classList.add("hidden");
     }
   } else {
@@ -56,6 +56,9 @@ function changeInput() {
 function addToDo(toDo) {
   toDoList.push(toDo);
   renderItems();
+  if(toDoList.length > 0) {
+    tutorialText.classList.add("hidden");
+  }
   resetInput();
 }
 

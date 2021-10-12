@@ -31,8 +31,12 @@ ul {
 .container {
   height: 90%;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
+}
+
+.input-container {
+  position: fixed;
+  bottom: 10vh;
 }
 
 .to-do {
@@ -70,4 +74,19 @@ ul {
   font-size: 2rem;
   color: #516880;
   font-weight: 800;
+}
+
+#plus-button {
+  height: 3rem;
+}
+
+#input-field {
+  font-family: 'Nunito', sans-serif;
+  color: #516880;
+  background-color: #FFFEF6;
+  font-size: 1rem;
+  height: 3rem;
+  width: 60vw;
+  max-width: 500px;
+  border: none;
 }
